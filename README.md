@@ -61,7 +61,7 @@ Eden operates across three primary layers:
 Before building the core libraries, ensure your environment is set up with the following:
 * **Visual Studio 2022** (with C++ Desktop Development tools installed)
 * **Go** (for compiling the blockchain and P2P networking logic)
-* **Wintun Library** (`wintun.lib` and `wintun.dll`) available in your `project/core` directory If it is missing, click `[it](https://git.zx2c4.com/wintun)` to get.
+* **Wintun Library** (`wintun.lib` and `wintun.dll`) available in your `project/core` directory If it is missing, click [it](https://git.zx2c4.com/wintun) to get.
 
 ---
 
