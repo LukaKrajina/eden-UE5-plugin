@@ -2,7 +2,7 @@
 
 **Eden** is a comprehensive, decentralized peer-to-peer multiplayer networking ecosystem, VPN tunnel, and blockchain consensus engine built natively for Unreal Engine 5. It seamlessly bridges advanced Libp2p networking, Wintun-backed virtual LAN routing, and a bespoke LevelDB blockchain layer to power competitive, serverless multiplayer experiences.
 
-Whether you are building a tactical shooter requiring Faceit-like matchmaking and Glicko-2 skill tracking, or a decentralized game featuring integrated betting and community-driven anti-cheat, Eden provides the entire infrastructure stack directly via Unreal Engine Blueprints.
+If you want to quickly implement a serverless multiplayer solution with excellent matchmaking and skill rating, alongside decentralized mechanisms for integrated betting and community-driven anti-cheat, the Eden UE5 plugin can help. It delivers all these functionalities directly through Unreal Engine Blueprints.
 
 ---
 
@@ -14,8 +14,8 @@ Whether you are building a tactical shooter requiring Faceit-like matchmaking an
 * **Seamless UE5 Integration:** Exposed entirely to Blueprints via the `EdenBPLibrary`. Start the engine, find matches, and advertise lobbies with single nodes.
 
 ### ⚔️ Competitive Matchmaking
-* **Faceit-Style Queues:** Decentralized queueing system via PubSub topics. Players can form parties, enter matchmaking, and mathematically discover optimal lobbies based on party size and Elo spread.
-* **Glicko-2 / Abel2 Rating System:** Built-in skill tracking that accounts for rating, deviation, and volatility. Rewards and rating adjustments are automatically calculated upon match consensus.
+* **Queues System:** Decentralized queueing system via PubSub topics. Players can form parties, enter matchmaking, and mathematically discover optimal lobbies based on party size and Elo spread.
+* **Rating System:** Built-in skill tracking that accounts for rating, deviation, and volatility. Rewards and rating adjustments are automatically calculated upon match consensus.
 * **Pre-Match Systems:** Built-in support for Map Vetoes, Match Ready states, and secure password-protected lobby generation. 
 
 ### 💎 Blockchain Economy & Consensus
