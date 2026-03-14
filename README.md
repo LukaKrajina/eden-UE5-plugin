@@ -1,4 +1,4 @@
-# Eden P2P Network for Unreal Engine 5
+# Eden for Unreal Engine 5
 
 **Eden** is a comprehensive, decentralized peer-to-peer multiplayer networking ecosystem, VPN tunnel, and blockchain consensus engine built natively for Unreal Engine 5. It seamlessly bridges advanced Libp2p networking, Wintun-backed virtual LAN routing, and a bespoke LevelDB blockchain layer to power competitive, serverless multiplayer experiences.
 
