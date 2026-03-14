@@ -29,7 +29,7 @@ echo - Go compilation successful!
 
 echo.
 echo [2/2] Compiling C++ file (adamUE.cpp) into UE5adam.dll...
-:: We use cl.exe. We point the include path (/I) to core, and output to the BIN_DIR
+:: Use cl.exe. We point the include path (/I) to core, and output to the BIN_DIR
 :: Note: This assumes wintun.lib is accessible in the core folder or system LIB path.
 pushd "%CORE_DIR%"
 cl.exe /O2 /LD /W3 /I. "adamUE.cpp" /Fe"%BIN_DIR%\UE5adam.dll" /Fo"%BIN_DIR%\UE5adam.obj" /link /LIBPATH:.
@@ -46,7 +46,7 @@ echo.
 echo Cleaning up intermediate build files...
 del "%BIN_DIR%\*.obj" 2>nul
 del "%BIN_DIR%\*.exp" 2>nul
-:: The Go compiler generates a .h file when making a c-shared DLL, which you can safely delete if you don't need it.
+:: The Go compiler generates a .h file when making a c-shared DLL, it can safely delete.
 del "%BIN_DIR%\UE5cain.h" 2>nul
 
 echo.
