@@ -38,7 +38,7 @@ Eden operates across three primary layers:
 
 ---
 
-## 🚀 Installation & Setup
+## 🚀 Release Installation & Setup
 
 ### Prerequisites
 * Unreal Engine 5.x
@@ -52,9 +52,29 @@ Eden operates across three primary layers:
    * `UE5adam.dll`
    * `UE5cain.dll`
    * `wintun.dll`
-5. Launch your Unreal Engine project and enable the **Eden P2P Network** plugin via `Edit > Plugins`.
+5. Launch your Unreal Engine project and enable the **Eden** plugin via `Edit > Plugins`.
 
 ---
+
+## ⚙️ Prerequisites
+
+Before building the core libraries, ensure your environment is set up with the following:
+* **Visual Studio 2022** (with C++ Desktop Development tools installed)
+* **Go** (for compiling the blockchain and P2P networking logic)
+* **Wintun Library** (`wintun.lib` and `wintun.dll`) available in your `project/core` directory.
+
+---
+
+## 🛠️ Building the Core Libraries
+
+The core networking and blockchain logic is handled by external Go and C++ libraries that must be compiled into DLLs before launching Unreal Engine.
+
+1. Open a **Developer Command Prompt for Visual Studio**.
+2. Navigate to the root directory of your project.
+3. Execute the build script:
+   ```cmd
+   build.bat
+4. Verify that the compilation succeeds. The script will generate the required DLLs in the `Project/Binaries/WIN64/` folder.
 
 ## 🔌 Quick Start (Blueprint API)
 
