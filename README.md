@@ -76,6 +76,8 @@ The core networking and blockchain logic is handled by external Go and C++ libra
    build.bat
 4. Verify that the compilation succeeds. The script will generate the required DLLs in the `Project/Binaries/WIN64/` folder.
 
+---
+
 ## 🔌 Quick Start (Blueprint API)
 
 All core functions are accessible via the `Eden` category in Blueprints. 
