@@ -1,0 +1,15 @@
+custom: 
+  # Bitcoin
+  - https://mempool.space/address/bc1qq68j5jgnd2j3wv9fc8n22v3ntqly03r7ec0lm3
+  
+  # Ethereum
+  - https://etherscan.io/address/0x76017445F36C9a0684cD0f5D875B30Cb0f71e41b
+  
+  # BNB Smart Chain
+  - https://bscscan.com/address/0x76017445F36C9a0684cD0f5D875B30Cb0f71e41b
+  
+  # Tron
+  - https://tronscan.org/#/address/TWSjZPAPmpK6Ep4p4FfkiLaSqgYSF8SHZj
+  
+  # Linea
+  - https://lineascan.build/address/0x76017445F36C9a0684cD0f5D875B30Cb0f71e41b
