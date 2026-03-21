@@ -96,4 +96,4 @@ All core functions are accessible via the `Eden` category in Blueprints.
 ---
 
 ## 📄 License
-This project is licensed under the MIT License - see the `license.text` file for details.
+This project is licensed under the GPL License - see the `license.text` file for details.
