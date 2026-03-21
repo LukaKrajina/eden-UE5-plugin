@@ -360,6 +360,7 @@ func UpdateMyProfile(username *C.char, avatarURL *C.char) *C.char {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     prevHash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
@@ -485,6 +486,7 @@ func GenerateAndRegisterFriendCode() *C.char {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     prevHash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
@@ -1024,6 +1026,7 @@ func StartMatch(matchID *C.char, playerList *C.char, password *C.char) *C.char {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     prevHash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
@@ -1129,6 +1132,7 @@ func AbortMatch(matchID *C.char) *C.char {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     EdenChain.LastBlock.Hash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
@@ -1229,6 +1233,7 @@ func PlaceBet(matchID *C.char, team *C.char, amount C.double) *C.char {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     EdenChain.LastBlock.Hash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
@@ -1271,6 +1276,7 @@ func SendTransaction(receiver *C.char, amount C.double) C.int {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     EdenChain.LastBlock.Hash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
@@ -2105,6 +2111,7 @@ func SubmitDodgePenalty(matchID *C.char, dodgerPeerID *C.char) *C.char {
 		Timestamp:    time.Now().Unix(),
 		Transactions: []Transaction{tx},
 		PrevHash:     prevHash,
+		ChainWeight:  EdenChain.LastBlock.ChainWeight,
 	}
 	newBlock.Hash = calculateHash(newBlock)
 
