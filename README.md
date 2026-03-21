@@ -1,5 +1,9 @@
 # Eden for Unreal Engine 5
 
+![License](https://img.shields.io/badge/License-GPL%203.0-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![Status](https://img.shields.io/badge/Status-Alpha-orange)
+
 **Eden** is a comprehensive, decentralized peer-to-peer multiplayer networking ecosystem, VPN tunnel, and blockchain consensus engine built natively for Unreal Engine 5. It seamlessly bridges advanced Libp2p networking, Wintun-backed virtual LAN routing, and a bespoke LevelDB blockchain layer to power competitive, serverless multiplayer experiences.
 
 If you want to quickly implement a serverless multiplayer solution with excellent matchmaking and skill rating, alongside decentralized mechanisms for integrated betting and community-driven anti-cheat, the Eden UE5 plugin can help. It delivers all these functionalities directly through Unreal Engine Blueprints.
